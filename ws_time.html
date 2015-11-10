@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Perl Web Sockets Demonstration</title>
+	<style>
+	  .trying { background: yellow; }
+	  .connected { background: green; }
+	  .error { background: red; }
+	  #timer { display:none; }
+	  .source { border: 1px solid #999; }
+	  #perl { width: 25em; height: 25ex; }
+	  #javascript { width: 50em; height: 52ex; }
+	  #html { width: 50em; height: 52ex; }
+	</style>
+  </head>
+  <body>
+	<h1>Perl Web Sockets Demonstration</h1>
+	<p>Status: <span id="status" class="trying">Connecting...</span> <span id="timer">Time is: <span id="time"></span></p>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="ws_time.js"></script>
+	<h2>Perl Source</h2>
+	<iframe class="source" id="perl" src="ws_time.pl"></iframe>
+	<h2>JavaScript Source</h2>
+	<iframe class="source" id="javascript" src="ws_time.js"></iframe>
+  </body>
+</html>
